@@ -1,0 +1,12 @@
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\bin\Release\net6.0\Core.deps.json
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\bin\Release\net6.0\Core.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\bin\Release\net6.0\ref\Core.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\bin\Release\net6.0\Core.pdb
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Release\net6.0\Core.csproj.AssemblyReference.cache
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Release\net6.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Release\net6.0\Core.AssemblyInfoInputs.cache
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Release\net6.0\Core.AssemblyInfo.cs
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Release\net6.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Release\net6.0\Core.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Release\net6.0\ref\Core.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Release\net6.0\Core.pdb
