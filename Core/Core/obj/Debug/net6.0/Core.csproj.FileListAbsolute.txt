@@ -10,3 +10,5 @@ C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Debug\net6.0\Core.dll
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Debug\net6.0\ref\Core.dll
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Debug\net6.0\Core.pdb
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\bin\Debug\net6.0\Core.runtimeconfig.json
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\Core\Core\obj\Debug\net6.0\Core.genruntimeconfig.cache

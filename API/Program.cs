@@ -11,11 +11,7 @@ internal class Program
 
         //builder.Configuration
         //.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-        //.AddEnvironmentVariables();
- 
-        var dbConnectionString = builder.Configuration.GetConnectionString("DbConnection");
-        Console.WriteLine("CONNECTIONSTRING: " + dbConnectionString);
-    
+        //.AddEnvironmentVariables();        
 
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -24,7 +20,8 @@ internal class Program
 
         builder.Services.AddDbContext<DataContext>(opt =>
         {
-            opt.UseNpgsql(dbConnectionString);
+            var connectionString = GetConnectionString(builder.Configuration);
+            opt.UseNpgsql(connectionString);
         });
 
         var app = builder.Build();
@@ -43,5 +40,16 @@ internal class Program
         app.MapControllers();
 
         app.Run();
+    }
+    
+    private static string GetConnectionString(IConfiguration config)
+    {
+        var host = config.GetValue<string>("DBHOSTNAME");
+        var port = config.GetValue<string>("DBPORT");
+        var dbName = config.GetValue<string>("DBNAME");
+        var username = config.GetValue<string>("DBUSERNAME");
+        var password = config.GetValue<string>("DBPASSWORD");      
+
+        return $"Host={host}:{port};Database={dbName};Username={username};Password={password}";
     }
 }

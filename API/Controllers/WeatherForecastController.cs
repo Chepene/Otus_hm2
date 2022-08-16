@@ -33,13 +33,13 @@ public class WeatherForecastController : BasicApiController
             {
                 Date = DateTime.Now,
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = TestDB(GetConnectionString(_configuration))
+                Summary = "fgdgfd"
             },
             new WeatherForecast
             {
                 Date = DateTime.Now,
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = GetConnectionString(_configuration)
+                Summary = "d"
             },
 
         };
@@ -53,16 +53,7 @@ public class WeatherForecastController : BasicApiController
         .ToArray();
     }
 
-    private string GetConnectionString(IConfiguration config)
-    {
-        var host = _configuration.GetValue<string>("DBHOSTNAME");
-        var port = _configuration.GetValue<string>("DBPORT");
-        var dbName = _configuration.GetValue<string>("DBNAME");
-        var username = _configuration.GetValue<string>("DBUSERNAME");
-        var password = _configuration.GetValue<string>("DBPASSWORD");      
 
-        return $"Host={host}:{port};Database={dbName};Username={username};Password={password}";
-    }
 
     private string TestDB(string dbConnectionString)
     {

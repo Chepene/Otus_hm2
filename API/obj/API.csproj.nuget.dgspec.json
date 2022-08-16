@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\api\\API.csproj": {}
+    "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\api\\API.csproj": {
+    "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\api\\API.csproj",
+        "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\API\\API.csproj",
         "packagesPath": "C:\\Users\\chepe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\api\\obj\\",
+        "outputPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chepe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.1, )"
@@ -115,6 +121,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[6.0.5, )"
