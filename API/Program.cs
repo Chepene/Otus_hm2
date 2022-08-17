@@ -1,6 +1,9 @@
+using API;
 using Core.DB;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.EntityFrameworkCore;
-using Npgsql;
+using HealthChecks.UI.Client;
+using API.HealthChecks;
 
 internal class Program
 {
@@ -13,6 +16,11 @@ internal class Program
         //.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
         //.AddEnvironmentVariables();        
 
+        builder.Services.AddHealthChecks()
+            .AddCheck<ConfigurationHealthCheck>("configuration", null, new[] { "startup" })
+            .AddCheck<DbHealthCheck>("db", null, new[] { "startup" })
+            .AddCheck<DumbHealthCheck>("dumb", null, new[] {"dumb"});
+
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
@@ -20,7 +28,7 @@ internal class Program
 
         builder.Services.AddDbContext<DataContext>(opt =>
         {
-            var connectionString = GetConnectionString(builder.Configuration);
+            var connectionString = ConfigurationHelper.GetConnectionString(builder.Configuration);
             opt.UseNpgsql(connectionString);
         });
 
@@ -35,21 +43,36 @@ internal class Program
 
         app.UseHttpsRedirection();
 
-        app.UseAuthorization();
+        app.UseRouting();
+        app.UseAuthorization(); 
+        app.UseEndpoints(endpoints => 
+        {
+            endpoints.MapHealthChecks("/health-details", new HealthCheckOptions()
+            {
+                Predicate = _ => true,
+                ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+            });
+
+            endpoints.MapHealthChecks("/healthz", new HealthCheckOptions()
+            {
+                Predicate = (a => a.Tags.Contains("dumb"))
+            });
+
+            endpoints.MapHealthChecks("/ready", new HealthCheckOptions()
+            {
+                Predicate = (a => a.Tags.Contains("dumb"))
+            });
+
+            endpoints.MapHealthChecks("/health/startup", new HealthCheckOptions()
+            {
+                Predicate = (a => a.Tags.Contains("startup"))
+            });
+        });
 
         app.MapControllers();
 
-        app.Run();
+        app.Run();        
     }
     
-    private static string GetConnectionString(IConfiguration config)
-    {
-        var host = config.GetValue<string>("DBHOSTNAME");
-        var port = config.GetValue<string>("DBPORT");
-        var dbName = config.GetValue<string>("DBNAME");
-        var username = config.GetValue<string>("DBUSERNAME");
-        var password = config.GetValue<string>("DBPASSWORD");      
 
-        return $"Host={host}:{port};Database={dbName};Username={username};Password={password}";
-    }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\API\\API.csproj": {}
+    "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\API\\API.csproj": {
+    "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\API\\API.csproj",
+        "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\api\\API.csproj",
         "packagesPath": "C:\\Users\\chepe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\API\\obj\\",
+        "outputPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chepe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -58,9 +62,17 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "Microsoft.Extensions.Diagnostics.HealthChecks": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "aspnetcore.healthchecks.ui": {
+              "target": "Package",
+              "version": "[6.0.5, )"
             }
           },
           "imports": [

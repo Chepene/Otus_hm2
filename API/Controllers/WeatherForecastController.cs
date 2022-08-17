@@ -44,42 +44,14 @@ public class WeatherForecastController : BasicApiController
 
         };
 
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateTime.Now.AddDays(index),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+        // return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        // {
+        //     Date = DateTime.Now.AddDays(index),
+        //     TemperatureC = Random.Shared.Next(-20, 55),
+        //     Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+        // })
+        // .ToArray();
     }
 
 
-
-    private string TestDB(string dbConnectionString)
-    {
-        try
-        {
-            using (var connection = new NpgsqlConnection(dbConnectionString))
-                {
-                    connection.Open();
-
-                    using (var command = new NpgsqlCommand("select 1", connection))
-                    {
-                        var t = command.ExecuteNonQuery();
-                    }
-                    connection.Close();
-
-                    return "Ok";
-                }
-        }
-        catch(Exception ex)
-        {
-            _logger.LogError(ex, ex.Message);
-            Console.WriteLine(ex.Message);
-
-            return ex.Message;
-        }
-
-        
-    }
 }
