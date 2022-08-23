@@ -81,3 +81,8 @@ C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\out\web.config
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\out\API.deps.json
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\out\API.runtimeconfig.json
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\out\appsettings.Development.json
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\out\appsettings.json
