@@ -9,11 +9,12 @@
       "API/1.0.0": {
         "dependencies": {
           "AspNetCore.HealthChecks.UI.Client": "6.0.5",
-          "Core": "1.0.0",
+          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.8",
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Microsoft.Extensions.Configuration.CommandLine": "6.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "6.0.8",
+          "Persistence": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3",
           "AspNetCore.HealthChecks.UI": "6.0.5"
         },
@@ -921,15 +922,21 @@
           }
         }
       },
-      "Core/1.0.0": {
+      "Domain/1.0.0": {
+        "runtime": {
+          "Domain.dll": {}
+        }
+      },
+      "Persistence/1.0.0": {
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.CommandLine": "6.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.5"
         },
         "runtime": {
-          "Core.dll": {}
+          "Persistence.dll": {}
         }
       }
     }
@@ -1619,7 +1626,12 @@
       "path": "yamldotnet/8.1.2",
       "hashPath": "yamldotnet.8.1.2.nupkg.sha512"
     },
-    "Core/1.0.0": {
+    "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

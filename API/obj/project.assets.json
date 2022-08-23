@@ -1347,20 +1347,31 @@
           "lib/netstandard2.1/YamlDotNet.dll": {}
         }
       },
-      "Core/1.0.0": {
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.CommandLine": "6.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.5"
         },
         "compile": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Persistence.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Persistence.dll": {}
         }
       }
     }
@@ -4605,20 +4616,26 @@
         "yamldotnet.nuspec"
       ]
     },
-    "Core/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
-      "path": "../Core/Core/Core.csproj",
-      "msbuildProject": "../Core/Core/Core.csproj"
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Persistence/Persistence.csproj",
+      "msbuildProject": "../Persistence/Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AspNetCore.HealthChecks.UI.Client >= 6.0.5",
-      "Core >= 1.0.0",
+      "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "Microsoft.Extensions.Configuration >= 6.0.1",
       "Microsoft.Extensions.Configuration.CommandLine >= 6.0.0",
       "Microsoft.Extensions.Diagnostics.HealthChecks >= 6.0.8",
+      "Persistence >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "aspnetcore.healthchecks.ui >= 6.0.5"
     ]
@@ -4650,8 +4667,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Core\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Core\\Core\\Core.csproj"
+            "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Domain\\Domain.csproj"
+            },
+            "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Persistence\\Persistence.csproj"
             }
           }
         }
