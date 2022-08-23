@@ -13,6 +13,7 @@ userservice:
   image:
     repository: chepene/otus2-repo
     pullPolicy: IfNotPresent
+    strategy: Recreate
     # Overrides the image tag whose default is the chart appVersion.
     tag: "latest"
 
