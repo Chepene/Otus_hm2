@@ -10,6 +10,10 @@ userservice:
    dbname: my-db
    username: robot
 
+  dbmigratorimage:
+    repository: chepene/otus2-dbmigrator
+    tag: "latest"
+
   image:
     repository: chepene/otus2-repo
     pullPolicy: IfNotPresent
