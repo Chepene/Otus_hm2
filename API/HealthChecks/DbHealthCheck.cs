@@ -1,3 +1,4 @@
+using Core.DB;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Npgsql;
 

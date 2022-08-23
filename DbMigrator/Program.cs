@@ -1,11 +1,33 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+using Core.DB;
+using Npgsql;
+using Microsoft.EntityFrameworkCore;
 
-app.MapGet("/", () => "Hello World!");
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Start Migrating..");
+        
+        var builder = WebApplication.CreateBuilder(args);
 
-Console.WriteLine("Start Migrating..");
+        builder.Services.AddDbContext<DataContext>(opt =>
+        {
+            var connectionString = ConfigurationHelper.GetConnectionString(builder.Configuration);
+            opt.UseNpgsql(connectionString);
+        });
 
-Thread.Sleep(30_000);
+        var app = builder.Build();
 
-Console.WriteLine("Finished Migration");
+        using (var scope = app.Services.CreateScope())
+        {
+            var services = scope.ServiceProvider;
 
+            var context = services.GetRequiredService<DataContext>();
+
+            context.Database.EnsureCreated();
+        }
+
+        Console.WriteLine("Finished Migration");
+        
+    }
+}

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "x3k6p7IyHnKbdFKMf9fWE+AYUlBmILzeUM44xDPbncQ0oijxm9VoTo2A/29hGLWPV5dabjOKMDfwrMj0TZlDmQ==",
+  "dgSpecHash": "wfQ4pejlWcxurCbkzSxe+O0I4No6bPPzKTVlJXkVesVhSSrUldsEsJztQ6kdBEEYrdxkZp0TYMsFXNxGLTx9DA==",
   "success": true,
   "projectFilePath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\api\\API.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\chepe\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\chepe\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\chepe\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\chepe\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
     "C:\\Users\\chepe\\.nuget\\packages\\microsoft.extensions.configuration.commandline\\6.0.0\\microsoft.extensions.configuration.commandline.6.0.0.nupkg.sha512",
     "C:\\Users\\chepe\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\chepe\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
