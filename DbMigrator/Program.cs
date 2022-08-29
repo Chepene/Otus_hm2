@@ -1,6 +1,6 @@
-using Core.DB;
-using Npgsql;
 using Microsoft.EntityFrameworkCore;
+using Core.DB;
+using Persistnce;
 
 internal class Program
 {

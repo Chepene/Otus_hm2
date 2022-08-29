@@ -28,6 +28,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Application\\Application.csproj"
+              },
               "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Domain\\Domain.csproj": {
                 "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Domain\\Domain.csproj"
               },
@@ -92,6 +95,73 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\chepe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\chepe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\chepe\\Programming\\otus\\002_kuber_homework2\\workfiles\\hm2\\Persistence\\Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -194,9 +264,7 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.8, )"
             },
@@ -220,7 +288,7 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[6.0.6, )"
             }
           },
           "imports": [

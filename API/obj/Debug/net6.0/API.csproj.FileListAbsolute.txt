@@ -88,3 +88,8 @@ C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Persistence.dll
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Persistence.pdb
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Domain.pdb
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\MediatR.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Application.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Application.pdb

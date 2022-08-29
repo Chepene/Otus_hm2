@@ -1,29 +1,29 @@
-using Core;
-using Core.DB;
+using Application.Users;
+using Domain;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Persistnce;
 
 namespace API.Controllers
 {
     public class UsersController : BasicApiController
     {
-        private readonly DataContext _context;
+        private readonly IMediator _mediator;
 
-        public UsersController(DataContext context)
+        public UsersController(IMediator mediator)
         {
-            _context = context;
+            _mediator = mediator;
+           
         }
 
         [HttpGet]
         public async Task<ActionResult<List<User>>> GetUsers()
         {
-           return await _context.Users.ToListAsync();
+           return await _mediator.Send(new List.Query());
         }
 
         [HttpGet("{id}")]
-        public async Task<User> GetUser(Guid id)
-        {
-            return await _context.Users.FindAsync(id);
-        }
+        public async Task<ActionResult<User>> GetUser(Guid id) => Ok();
     }
 }
