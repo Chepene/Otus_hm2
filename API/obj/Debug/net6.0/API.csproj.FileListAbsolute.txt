@@ -93,3 +93,4 @@ C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Application.dll
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Application.pdb
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll

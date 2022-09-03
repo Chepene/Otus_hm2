@@ -56,7 +56,7 @@
                 "appProject": "${workspaceFolder}/API/API.csproj"
             },
             "dockerServerReadyAction": {
-                "uriFormat": "%s://localhost:%s/WeatherForecast"
+                "uriFormat": "%s://localhost:%s/"
             }
         }
     ]

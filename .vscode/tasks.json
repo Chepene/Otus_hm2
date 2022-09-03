@@ -91,7 +91,10 @@
             "dockerRun": {
                 "ports": [
                     { "hostPort": 5000, "containerPort": 5000 }
-                ]
+                ],
+                "env": {
+                    "DBHOSTNAME": "host.docker.internal"
+                }
             },
             "netCore": {
                 "appProject": "${workspaceFolder}/API/API.csproj",
