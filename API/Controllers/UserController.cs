@@ -9,21 +9,16 @@ namespace API.Controllers
 {
     public class UsersController : BasicApiController
     {
-        private readonly IMediator _mediator;
-
-        public UsersController(IMediator mediator)
-        {
-            _mediator = mediator;
-           
-        }
-
         [HttpGet]
         public async Task<ActionResult<List<User>>> GetUsers()
         {
-           return await _mediator.Send(new List.Query());
+           return await Mediator.Send(new List.Query());
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(Guid id) => Ok();
+        public async Task<ActionResult<User>> GetUser(Guid id)
+        {
+            return await Mediator.Send(new Details.Query{Id = id}); 
+        }
     }
 }
