@@ -28,5 +28,12 @@ namespace API.Controllers
             user.BirthDate = user.BirthDate.SetKindUtc();
             return Ok(await Mediator.Send(new Create.Command {User = user}));
         }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult> EditUser(Guid id, User user)
+        {
+            user.Id = id;
+            return Ok(await Mediator.Send(new Edit.Command{User = user}));
+        }
     }
 }

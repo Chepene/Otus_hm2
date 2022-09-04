@@ -7,6 +7,7 @@ using API.HealthChecks;
 using Persistnce;
 using MediatR;
 using Application.Users;
+using Application.Core;
 
 internal class Program
 {
@@ -36,6 +37,8 @@ internal class Program
         });
 
         builder.Services.AddMediatR(typeof(List.Handler).Assembly);
+
+        builder.Services.AddAutoMapper(typeof(MappingProfiles).Assembly);
 
         var app = builder.Build();
  
