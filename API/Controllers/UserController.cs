@@ -1,3 +1,4 @@
+using Application.Core;
 using Application.Users;
 using Domain;
 using MediatR;
@@ -19,6 +20,13 @@ namespace API.Controllers
         public async Task<ActionResult<User>> GetUser(Guid id)
         {
             return await Mediator.Send(new Details.Query{Id = id}); 
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateUser(User user)
+        {
+            user.BirthDate = user.BirthDate.SetKindUtc();
+            return Ok(await Mediator.Send(new Create.Command {User = user}));
         }
     }
 }
