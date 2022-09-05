@@ -23,6 +23,26 @@
             }
         },
         {
+            "name": ".NET Core Launch DbMigrator (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "builddbmigrator",
+            "program": "${workspaceFolder}/dbmigrator/bin/Debug/net6.0/DbMigrator.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/dbmigrator",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
@@ -36,7 +56,7 @@
                 "appProject": "${workspaceFolder}/API/API.csproj"
             },
             "dockerServerReadyAction": {
-                "uriFormat": "%s://localhost:%s/WeatherForecast"
+                "uriFormat": "%s://localhost:%s/"
             }
         }
     ]

@@ -31,8 +31,6 @@ C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Npgsql.dll
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Core.dll
-C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Core.pdb
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
@@ -86,3 +84,14 @@ C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\out\API.runtimeconfig.json
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\out\appsettings.Development.json
 C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\out\appsettings.json
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Domain.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Persistence.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Persistence.pdb
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Domain.pdb
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\MediatR.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Application.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Application.pdb
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\chepe\Programming\otus\002_kuber_homework2\workfiles\hm2\api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

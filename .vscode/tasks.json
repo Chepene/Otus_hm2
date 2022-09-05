@@ -14,6 +14,18 @@
             "problemMatcher": "$msCompile"
         },
         {
+            "label": "builddbmigrator",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/dbmigrator/DbMigrator.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "publish",
             "command": "dotnet",
             "type": "process",
@@ -79,7 +91,10 @@
             "dockerRun": {
                 "ports": [
                     { "hostPort": 5000, "containerPort": 5000 }
-                ]
+                ],
+                "env": {
+                    "DBHOSTNAME": "host.docker.internal"
+                }
             },
             "netCore": {
                 "appProject": "${workspaceFolder}/API/API.csproj",

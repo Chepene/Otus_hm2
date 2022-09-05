@@ -4,6 +4,10 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.EntityFrameworkCore;
 using HealthChecks.UI.Client;
 using API.HealthChecks;
+using Persistnce;
+using MediatR;
+using Application.Users;
+using Application.Core;
 
 internal class Program
 {
@@ -32,8 +36,12 @@ internal class Program
             opt.UseNpgsql(connectionString);
         });
 
-        var app = builder.Build();
+        builder.Services.AddMediatR(typeof(List.Handler).Assembly);
 
+        builder.Services.AddAutoMapper(typeof(MappingProfiles).Assembly);
+
+        var app = builder.Build();
+ 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {
